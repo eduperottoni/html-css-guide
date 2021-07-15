@@ -7,17 +7,55 @@
 
 body, html{
     width:100%;
-    background-color: rgb(233, 233, 233);
+    background: #fff;
 }
 
 header{
-    margin: 20px auto;
+    padding:20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,255,255,1) 0%, rgb(173, 171, 171) 100%, rgb(117, 115, 114) 100%);
+}
+
+header img{
+    width: 60px;
+    height:60px;
 }
 
 .pt{
     display: none;
 }
 
+ul, ol{
+    margin-left: 50px;
+}
+
+th, td{
+    border-radius: 2.5px;
+    padding: 5px;
+}
+
+table tr:nth-child(even){
+    background-color: darkred;
+}
+
+th:hover{
+    background-color: rgba(196, 62, 13, 0.8);
+}
+
+td:hover{
+    border-bottom: 2px solid #000;
+}
+tbody tr:hover{
+    background-color: rgb(27, 189, 108);
+}
+
+table thead{
+    background-color: #ff7f50;
+}
+
+table tbody{
+    background-color: darkcyan;
+}
 
