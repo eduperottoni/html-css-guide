@@ -63,6 +63,8 @@
     Break Row Tag
     <br/><br/>
 
+    Tag pre
+
     Tag de parágrafo
     <p>Parágrafo</p>
 
@@ -189,13 +191,44 @@
 
     Tags de formulários
     Tag form
+    Atributo enctype
     Atributo action (Indica pra onde o usuário é redirecionado)
     Atributo method (GET, POST)
+    Atributo pattern (Regex) + title
     Tag input
-        Atributo type (text (email e password), phone, number, checkbox, radio (relacionados pelo atributo name e diferenciados pelo atributo id), submit)
+        Atributo required
+        Atributo minlength e maxlength (apenas quando é digitado no campo)
+        Atributo type (text (email e password), checkbox, radio (relacionados pelo atributo name e diferenciados pelo atributo id), submit)
         Atributo name (identifica o campo e é a chave para o valor)
         Atributo value (pré-determina o valor do campo)
         Atributo id (diferencia os campos de radio ou de options no select, por exemplo)
+    Variações de input type text que vieram com o HTML5
+        Type color
+        Type date
+            Atributo min, max (formato internacional)
+        Type date-time local
+        Type month
+        Type range
+        Type search
+        Type tel
+        Type time
+        Type URL
+        Type number
+            Atributo step
+            Atributo min, max
+        Type email
+        Type week
+        Type hidden
+        Type file
+            Atributo accept (para tipo ou extensão específica) 
+             
+
+    Select
+        Atributo selected
+        Atributo size
+        Atributo multiple
+
+
     <form action="" method=''>
         <input type='text'>
         <input type="number" name="" id="">
@@ -203,7 +236,50 @@
         <input type="radio" name="sexo" id="fem">
         <input type='radio' name='sexo' id='masc'>
         <input type="submit" value="Send">
-        <input type="email" name="" id="">
+        <input type="color" name="" id="">
+        <input type="date" name="" id="">
+        <input type="week" name="" id="">
+
+        <select name='order'>
+            <option value="bestseller">Mais vendidos</option>
+            <option value="last" selected>Recentes</option>
+        </select>
     </form>
+
+    Tag Textarea
+
+    Tag Button
+
+    Tag Label
+    Atributo for
+    Pode ser usado tanto atributo for quanto utilizar o input dentro do label
+
+    Tag Fieldset (separa campos do formulário em áreas)
+    Tag legend (nomeia o fieldset)
+    Exemplo:
+    <form action="">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="">
+                Nome:
+                <input type="text" name="name" id="">
+            </label>
+            <label for="">
+                Sobrenome:
+                <input type="text" name="lastname" id="">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <label for="">
+                Empresa:
+                <input type="text" name="company" id="">
+            </label>
+            <label for="">
+                Cargo:
+                <input type="text" name="occupation" id="">
+            </label>
+        </fieldset>
+    </form>    
 </body>
 </html>
