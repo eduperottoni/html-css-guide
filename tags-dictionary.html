@@ -10,25 +10,28 @@
 </head>
 <body>
     <header>
-        <img src="./img/dictionary.png" alt="Dicionário">
-        <h1 class='en'>HTML Tags Dictionary</h1>
-        <h1 class='pt'>Dicionário de Tags HTML</h1>
-        <div class='lan'>
-
-            <div class='lan-but'>
-
-            <div class='lan-but-com'></div>
+        <div id="title">
+            <img src="./img/html-logo2.png" alt="Logo HTML">
+            <h1 class='en'>Tags Dictionary</h1>
+            <h1 class='pt'>Dicionário de Tags</h1>
+        </div>
+        <div id='lan'>
+            <img src="./img/usa-flag.png" id='usa-flag' alt="English (USA)">
+            <div id='lan-but'>
+                <div id='lan-but-dot' class='is-en'></div>
             </div>
+            <img src="./img/brazil-flag.png" id='bra-flag' alt="Português (BR)">
         </div>
         
     </header>
     <nav>
         <ul>
+            <li><a href='#estrutura'>Estrutura de HTML</a></li>
             <li><a href='#'>Estrutura de HTML</a></li>
         </ul>
     </nav>
 
-    Tags de estrutura de documento
+    <h2 id='estrutura'>Tags de estrutura do HTML</h2>
     <!DOCTYPE html>
     <html></html>
     <head></head>
@@ -117,6 +120,7 @@
     <ul></ul>
     Itens da lista
     <li></li>
+    <h2 id='teste'>TESTE</h2>
     Exemplos:
     <ol>
         <li>item1</li>
@@ -145,6 +149,11 @@
     Tag th
     Tag tbody
     Tag thead
+
+
+    
+
+
 
     Exemplo:
     <table width='80%' style='margin: 0 auto;'>
@@ -280,6 +289,7 @@
                 <input type="text" name="occupation" id="">
             </label>
         </fieldset>
-    </form>    
+    </form>
+    <script src='./tags-dictionnary.js'></script>    
 </body>
 </html>
