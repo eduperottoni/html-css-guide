@@ -7,289 +7,317 @@
     <title>Tags Dictionary | HTML</title>
     <link rel="shortcut icon" href="./img/dictionary.png" type="image/x-icon">
     <link rel="stylesheet" href="./tags-dictionary.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div id="title">
-            <img src="./img/html-logo2.png" alt="Logo HTML">
-            <h1 class='en'>Tags Dictionary</h1>
-            <h1 class='pt'>Dicionário de Tags</h1>
-        </div>
-        <div id='lan'>
-            <img src="./img/usa-flag.png" id='usa-flag' alt="English (USA)">
-            <div id='lan-but'>
-                <div id='lan-but-dot' class='is-en'></div>
-            </div>
-            <img src="./img/brazil-flag.png" id='bra-flag' alt="Português (BR)">
-        </div>
-        
-    </header>
-    <nav>
-        <ul>
-            <li><a href='#estrutura'>Estrutura de HTML</a></li>
-            <li><a href='#'>Estrutura de HTML</a></li>
-        </ul>
-    </nav>
+    <div id='container'>
+        <nav>
+            <img src="./img/menu.gif" alt="" srcset="">
+            <ul>
+                <li><a href='#estrutura'>Estrutura de HTML</a></li>
+                <li><a href='#'>Estrutura de HTML</a></li>
+            </ul>
+        </nav>
 
-    <h2 id='estrutura'>Tags de estrutura do HTML</h2>
-    <!DOCTYPE html>
-    <html></html>
-    <head></head>
-    Tag link
-    Tag <meta>
-    tag title
+        <main>
+            <header>
+                <div id="title">
+                    <img src="./img/html-logo2.png" alt="Logo HTML">
+                    <h1 class='en'>Tags Dictionary</h1>
+                    <h1 class='pt'>Dicionário de Tags</h1>
+                </div>
+                <div id='lan'>
+                    <img src="./img/usa-flag.png" id='usa-flag' alt="English (USA)">
+                    <div id='lan-but'>
+                        <div id='lan-but-dot' class='is-en'></div>
+                    </div>
+                    <img src="./img/brazil-flag.png" id='bra-flag' alt="Português (BR)">
+                </div>
+            </header>
 
-    <body></body>
+            <h2 id='estrutura'>Tags de estrutura do HTML</h2>
+            <!DOCTYPE html>
+            <html></html>
+            <head></head>
+            Tag link
+            Tag <meta>
+            tag title
 
-    Tag style (CSS interno)
+            <body></body>
 
-    &lt;div&gt;Teste&lt;/div&gt;
-        
-    Tags Semânticas
+            Tag style (CSS interno)
+
+            &lt;div&gt;Teste&lt;/div&gt;
+                
+            Tags Semânticas
 
 
-    <h2 class='subtitles en'>Heading Tags</h2>
-    <h2 class='subtitles pt'></h2>
-    <p class='en'>They're the tags that represent the main titles and subtitles in the page. The level of each heading (h1, h2, h3, ...) makes difference in the search engines.</p>
-    <p class='pt'>São as tags que representam os principais títulos e sbtítulos na página. O nível de cada cabeçalho (h1, h2, h3, ...) faz diferença nos motores de busca.</p>
+            <h2 class='subtitles en'>Heading Tags</h2>
+            <h2 class='subtitles pt'></h2>
+            <p class='en'>They're the tags that represent the main titles and subtitles in the page. The level of each heading (h1, h2, h3, ...) makes difference in the search engines.</p>
+            <p class='pt'>São as tags que representam os principais títulos e sbtítulos na página. O nível de cada cabeçalho (h1, h2, h3, ...) faz diferença nos motores de busca.</p>
 
-    Tag de comentário
-    <!--Tag de comentário-->
+            Tag de comentário
+            <!--Tag de comentário-->
 
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
 
-    Break Row Tag
-    <br/><br/>
+            Break Row Tag
+            <br/><br/>
 
-    Tag pre
+            Tag pre
 
-    Tag de parágrafo
-    <p>Parágrafo</p>
+            Tag de parágrafo
+            <p>Parágrafo</p>
 
-    Tag de linha horizontal
-    <hr/>
+            Tag de linha horizontal
+            <hr/>
 
-    Tags de formatação de texto
-    Negrito (strong e bold)
-    <strong>Strong</strong> (Possui semântica de importância)
-    <b>Bold</b>
+            Tags de formatação de texto
+            Negrito (strong e bold)
+            <strong>Strong</strong> (Possui semântica de importância)
+            <b>Bold</b>
 
-    Itálico
-    <i>Itálico</i>
-    <en>Itálico</en> (Possui semântica de importância)
+            Itálico
+            <i>Itálico</i>
+            <en>Itálico</en> (Possui semântica de importância)
 
-    Texto menor
-    <small>Inferiorizando descrição</small>
+            Texto menor
+            <small>Inferiorizando descrição</small>
 
-    Tachado
-    <del>Texto com a tag del</del>
-    Corresponde à propriedade CSS text-decoration: line-through
+            Tachado
+            <del>Texto com a tag del</del>
+            Corresponde à propriedade CSS text-decoration: line-through
+            
+            Marca-texto
+            <mark>Texto marcado</mark>
+
+            Sobrescrito e Subscrito
+            <sup>TAG SUP</sup>
+            <sub>TAG SUB</sub>
+            <u>Underline</u>
+
+            Tag de link
+            <a href=''>ancor</a>
+            O atributo href: Pode nos levar a uma URL, local do nosso Sistema ou até mesmo um local específico em nossa página.
+            O atributo target: Utilizado quando se quer que o link seja aberto em nova aba. (_blank)
+            Atributo title (Atribui um título ao link)
+
+            Tag de imagem
+            O atributo src
+            O atributo alt
+            Exemplo:
+            <img src="https://google.com/google.jpg" alt="Logo do Google">
+
+            Tag Button
+            <button></button>
+
+            Tags de Listas
+            Listas ordenadas
+            <ol></ol>
+            Listas desordenadas
+            <ul></ul>
+            Itens da lista
+            <li></li>
+            <h2 id='teste'>TESTE</h2>
+            Exemplos:
+            <ol>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+                <li>item4</li>
+            </ol>
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+                <li>item4</li>
+            </ul>
+
+            Atributo start
+            Atributo list-style-type
+            Lista dentro de lista
+
+            Tag div
+
+            Construção de Tabelas
+            Tag table
+            Atributo border
+            Tag tr
+            Tag td
+            Tag th
+            Tag tbody
+            Tag thead
+
+
+            
+
+
+
+            Exemplo:
+            <table width='80%' style='margin: 0 auto;'>
+                <thead>
+                    <tr>
+                        <th>Item1</th>
+                        <th>Item2</th>
+                        <th>Item3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            Tags de formulários
+            Tag form
+            Atributo enctype
+            Atributo action (Indica pra onde o usuário é redirecionado)
+            Atributo method (GET, POST)
+            Atributo pattern (Regex) + title
+            Tag input
+                Atributo required
+                Atributo minlength e maxlength (apenas quando é digitado no campo)
+                Atributo type (text (email e password), checkbox, radio (relacionados pelo atributo name e diferenciados pelo atributo id), submit)
+                Atributo name (identifica o campo e é a chave para o valor)
+                Atributo value (pré-determina o valor do campo)
+                Atributo id (diferencia os campos de radio ou de options no select, por exemplo)
+            Variações de input type text que vieram com o HTML5
+                Type color
+                Type date
+                    Atributo min, max (formato internacional)
+                Type date-time local
+                Type month
+                Type range
+                Type search
+                Type tel
+                Type time
+                Type URL
+                Type number
+                    Atributo step
+                    Atributo min, max
+                Type email
+                Type week
+                Type hidden
+                Type file
+                    Atributo accept (para tipo ou extensão específica) 
+                    
+
+            Select
+                Atributo selected
+                Atributo size
+                Atributo multiple
+
+
+            <form action="" method=''>
+                <input type='text'>
+                <input type="number" name="" id="">
+                <input type="checkbox" name="" id="">
+                <input type="radio" name="sexo" id="fem">
+                <input type='radio' name='sexo' id='masc'>
+                <input type="submit" value="Send">
+                <input type="color" name="" id="">
+                <input type="date" name="" id="">
+                <input type="week" name="" id="">
+
+                <select name='order'>
+                    <option value="bestseller">Mais vendidos</option>
+                    <option value="last" selected>Recentes</option>
+                </select>
+            </form>
+
+            Tag Textarea
+
+            Tag Button
+
+            Tag Label
+            Atributo for
+            Pode ser usado tanto atributo for quanto utilizar o input dentro do label
+
+            Tag Fieldset (separa campos do formulário em áreas)
+            Tag legend (nomeia o fieldset)
+            Exemplo:
+            <form action="">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label for="">
+                        Nome:
+                        <input type="text" name="name" id="">
+                    </label>
+                    <label for="">
+                        Sobrenome:
+                        <input type="text" name="lastname" id="">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados profissionais</legend>
+                    <label for="">
+                        Empresa:
+                        <input type="text" name="company" id="">
+                    </label>
+                    <label for="">
+                        Cargo:
+                        <input type="text" name="occupation" id="">
+                    </label>
+                </fieldset>
+            </form>
+
+            <footer>
+
+            </footer>
+
+
+
+
+
+
+
+
+
+        </main>
+    </div>
+
     
-    Marca-texto
-    <mark>Texto marcado</mark>
-
-    Sobrescrito e Subscrito
-    <sup>TAG SUP</sup>
-    <sub>TAG SUB</sub>
-    <u>Underline</u>
-
-    Tag de link
-    <a href=''>ancor</a>
-    O atributo href: Pode nos levar a uma URL, local do nosso Sistema ou até mesmo um local específico em nossa página.
-    O atributo target: Utilizado quando se quer que o link seja aberto em nova aba. (_blank)
-    Atributo title (Atribui um título ao link)
-
-    Tag de imagem
-    O atributo src
-    O atributo alt
-    Exemplo:
-    <img src="https://google.com/google.jpg" alt="Logo do Google">
-
-    Tag Button
-    <button></button>
-
-    Tags de Listas
-    Listas ordenadas
-    <ol></ol>
-    Listas desordenadas
-    <ul></ul>
-    Itens da lista
-    <li></li>
-    <h2 id='teste'>TESTE</h2>
-    Exemplos:
-    <ol>
-        <li>item1</li>
-        <li>item2</li>
-        <li>item3</li>
-        <li>item4</li>
-    </ol>
-    <ul>
-        <li>item1</li>
-        <li>item2</li>
-        <li>item3</li>
-        <li>item4</li>
-    </ul>
-
-    Atributo start
-    Atributo list-style-type
-    Lista dentro de lista
-
-    Tag div
-
-    Construção de Tabelas
-    Tag table
-    Atributo border
-    Tag tr
-    Tag td
-    Tag th
-    Tag tbody
-    Tag thead
-
 
     
 
-
-
-    Exemplo:
-    <table width='80%' style='margin: 0 auto;'>
-        <thead>
-            <tr>
-                <th>Item1</th>
-                <th>Item2</th>
-                <th>Item3</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-            </tr>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-            </tr>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-            </tr>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-            </tr>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-            </tr>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-            </tr>
-        </tbody>
-    </table>
-
-    Tags de formulários
-    Tag form
-    Atributo enctype
-    Atributo action (Indica pra onde o usuário é redirecionado)
-    Atributo method (GET, POST)
-    Atributo pattern (Regex) + title
-    Tag input
-        Atributo required
-        Atributo minlength e maxlength (apenas quando é digitado no campo)
-        Atributo type (text (email e password), checkbox, radio (relacionados pelo atributo name e diferenciados pelo atributo id), submit)
-        Atributo name (identifica o campo e é a chave para o valor)
-        Atributo value (pré-determina o valor do campo)
-        Atributo id (diferencia os campos de radio ou de options no select, por exemplo)
-    Variações de input type text que vieram com o HTML5
-        Type color
-        Type date
-            Atributo min, max (formato internacional)
-        Type date-time local
-        Type month
-        Type range
-        Type search
-        Type tel
-        Type time
-        Type URL
-        Type number
-            Atributo step
-            Atributo min, max
-        Type email
-        Type week
-        Type hidden
-        Type file
-            Atributo accept (para tipo ou extensão específica) 
-             
-
-    Select
-        Atributo selected
-        Atributo size
-        Atributo multiple
-
-
-    <form action="" method=''>
-        <input type='text'>
-        <input type="number" name="" id="">
-        <input type="checkbox" name="" id="">
-        <input type="radio" name="sexo" id="fem">
-        <input type='radio' name='sexo' id='masc'>
-        <input type="submit" value="Send">
-        <input type="color" name="" id="">
-        <input type="date" name="" id="">
-        <input type="week" name="" id="">
-
-        <select name='order'>
-            <option value="bestseller">Mais vendidos</option>
-            <option value="last" selected>Recentes</option>
-        </select>
-    </form>
-
-    Tag Textarea
-
-    Tag Button
-
-    Tag Label
-    Atributo for
-    Pode ser usado tanto atributo for quanto utilizar o input dentro do label
-
-    Tag Fieldset (separa campos do formulário em áreas)
-    Tag legend (nomeia o fieldset)
-    Exemplo:
-    <form action="">
-        <fieldset>
-            <legend>Dados pessoais</legend>
-            <label for="">
-                Nome:
-                <input type="text" name="name" id="">
-            </label>
-            <label for="">
-                Sobrenome:
-                <input type="text" name="lastname" id="">
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>Dados profissionais</legend>
-            <label for="">
-                Empresa:
-                <input type="text" name="company" id="">
-            </label>
-            <label for="">
-                Cargo:
-                <input type="text" name="occupation" id="">
-            </label>
-        </fieldset>
-    </form>
+    
     <script src='./tags-dictionnary.js'></script>    
 </body>
 </html>

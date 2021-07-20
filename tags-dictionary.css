@@ -2,12 +2,20 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    transition: 0.5s;
 }
 
 body, html{
     width:100%;
-    background: #fff;
+    background-color: aquamarine
+}
+
+main{
+    background-color: aqua;
+    width: 80%;
+    margin: 0 0 0 auto; 
 }
 
 header{
@@ -24,7 +32,7 @@ header #title{
 }
 
 header #title h1{
-    margin: auto 0;
+    margin: 10px 0 auto 0;
 }
 
 header #title img{
@@ -102,4 +110,21 @@ header #lan #lan-but .is-en{
     100%{
         transform: translateX(0);  
     }
+}
+
+nav{
+    height: 100%;
+    width: 20%;
+    position:fixed;
+    
+    overflow-y:auto;
+    top: 0;
+    left: 0;
+
+    border-radius:0 20px 20px 0;
+    background-color: azure;
+}
+
+nav ul{
+
 }

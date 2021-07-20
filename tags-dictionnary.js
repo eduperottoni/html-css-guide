@@ -26,13 +26,13 @@ const changeLanguage = () =>{
     (hideLanguage(textEn), showLanguage(textPt))
 }
 //Quando o usuário clicar na bandeira do Brasil
-lanFlagBra.addEventListener('click', (e) =>{
+lanFlagBra.addEventListener('click', () =>{
     lanButtonDot.className = 'is-pt'
     isEn = false
     changeLanguage()
 })
 //Quando o usuário clicar na bandeira dos Estados Unidos
-lanFlagUsa.addEventListener('click', (e) =>{
+lanFlagUsa.addEventListener('click', () =>{
     lanButtonDot.className = 'is-en'
     isEn = true
     changeLanguage()
