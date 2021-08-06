@@ -48,5 +48,29 @@
 
     Propriedade object-fit (fill, contain, cover, none, scale-down)
 
+    Media queries
+    @media dita as regras para o tamanho de tela. Pode ditar mais de uma condição.
+        Only print
+        Only screen
+        all
+        orientation: landscape/portrait (baseado no tamanho da tela do dispositivo)
+        aspect-ratio (indica proporão da tela), min-aspect-ratio, max-aspect-ratio
+
+
+    Variáveis no css
+    Declaração no escopo global
+    :root{
+        --< NOME DA VARIÁVEL >: valor
+    }    
+    Para usar, var(--< NOME DA VARIÁVEL >)
+    Caso a variável não exista: 
+    var(--< NOME DA VARIÁVEL >, < VALOR DA OPCAO 2>)
+
+    Funções min e max (selecionam valor entre um array de valores relativos ou absolutos) 
+    width: max(50%, 300px)
+
+    Função calc (Faz operações matemáticas entre valores absolutos, relativos ou variáveis) 
+    width: calc(100% - 20px);
+
 </body>
 </html>
