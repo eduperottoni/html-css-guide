@@ -14,7 +14,7 @@ body, html{
 
 main{
     background-color: aqua;
-    width: 80%;
+    width: 100%;
     margin: 0 0 0 auto; 
 }
 
@@ -112,17 +112,50 @@ header #lan #lan-but .is-en{
     }
 }
 
-nav{
-    height: 100%;
-    width: 20%;
+
+
+img#menu-btn{
+}
+
+nav#menu-opt{
     position:fixed;
+    top:0;
+    left:0;
     
+    width: 100vw;
     overflow-y:auto;
-    top: 0;
-    left: 0;
+    z-index:999;
 
     border-radius:0 20px 20px 0;
     background-color: azure;
+
+    transform: translateX(-100%);
+}
+
+nav#menu-opt.opened{
+    animation:openMenu 0.5s forwards;
+}
+
+nav#menu-opt.closed{
+    animation:closeMenu 0.5s forwards;
+}
+
+@keyframes openMenu{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+
+@keyframes closeMenu{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
 }
 
 nav ul{

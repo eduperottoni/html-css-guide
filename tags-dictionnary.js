@@ -52,3 +52,18 @@ lanButton.addEventListener('click', (e) =>{
     changeLanguage()
 })
 
+//AÇÕES DO MENU HAMBURGUER
+const menuBtn = document.querySelector ('img#menu-btn')
+const menuOpt = document.getElementById ('menu-opt')
+
+function menuListener(){
+    var opened = menuOpt.classList ==  'opened' ? true : false; 
+    return opened
+}
+
+function openCloseMenu() {
+    menuListener() ?
+    (menuOpt.classList = 'closed'):
+    (menuOpt.classList = 'opened');
+}
+

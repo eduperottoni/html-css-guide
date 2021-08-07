@@ -14,15 +14,14 @@
 </head>
 <body>
     <div id='container'>
-        <nav>
-            <img src="./img/menu.gif" alt="" srcset="">
-            <ul>
-                <li><a href='#estrutura'>Estrutura de HTML</a></li>
-                <li><a href='#'>Estrutura de HTML</a></li>
-            </ul>
-        </nav>
-
-        <main>
+            <img id='menu-btn' src="./img/menu-btn.png" alt="Menu" srcset="" onclick="openCloseMenu()">
+            <nav id='menu-opt'class='closed'>
+                <img src="./img/close-menu-btn.png" alt="Fechar Menu" onclick="openCloseMenu()">
+                <ul>
+                    <li><a href='#estrutura'>Estrutura de HTML</a></li>
+                    <li><a href='#'>Estrutura de HTML</a></li>
+                </ul>
+            </nav>
             <header>
                 <div id="title">
                     <img src="./img/html-logo2.png" alt="Logo HTML">
@@ -316,15 +315,6 @@
 
             </footer>
 
-
-
-
-
-
-
-
-
-        </main>
     </div>
 
     
