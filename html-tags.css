@@ -2,19 +2,18 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 900;
     transition: 0.5s;
 }
 
-body, html{
-    width:100%;
+:root{
+    --backgroud: 
 }
 
-main{
-    background-color: aqua;
-    width: 100%;
-    margin: 0 0 0 auto; 
+body, html{
+    width:100%;
+    background-color: #ffffff
 }
 
 header{
@@ -57,7 +56,7 @@ header #lan img:hover{
 header #lan #lan-but{
     box-sizing: initial;
 
-    background-color: rgb(115, 115, 116);
+    background-color: rgb(181, 181, 207);
     width: 75px;
     height: 24px;
     margin: auto 10px;
@@ -126,7 +125,7 @@ nav#menu-opt{
     z-index:999;
 
     border-radius:0 20px 20px 0;
-    background-color: #5c5c5c;
+    background-color: rgb(122, 122, 211);
 
     transform: translateX(-100%);
 
@@ -194,6 +193,36 @@ div#modal-social{
     display: flex;
     justify-content: center;
     align-items:center;
+    position: relative;
+}
+
+div#modal div#modal-social div#modal-social-exit{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    background-color: red;
+    border-radius:50%;
+    cursor: pointer;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 20pt;
+}
+
+div#modal div#modal-social div#modal-social-exit:hover{
+    animation: rotation180Deg 2s forwards;
+}
+
+@keyframes rotation180Deg{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(180deg);
+    }
 }
 
 div#modal div#modal-social div#modal-social-header{
@@ -227,7 +256,6 @@ div#modal div#modal-social div#modal-social-header img{
 }
 
 footer {
-    background-color: #dddddd;
     display: flex;
     justify-content: center;
     padding: 10px

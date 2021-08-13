@@ -70,7 +70,7 @@ function openCloseMenu() {
 //AÇÕES NO MODAL DE CONTATO
 const modalBtn = document.getElementById('modal-link')
 const modalContainer = document.querySelector('div#modal')
-const modalCloseBtn = document.querySelector('#modal-social-exit')
+const modalCloseBtn = document.querySelector('div#modal-social-exit')
 
 modalContainer.addEventListener('click',  evt =>{
     if (evt.path.indexOf(modalCloseBtn)  == -1){
