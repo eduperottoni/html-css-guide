@@ -232,7 +232,7 @@
                 Type color
                 Type date
                     Atributo min, max (formato internacional)
-                Type date-time local
+                Type datetime-local
                 Type month
                 Type range
                 Type search
@@ -243,10 +243,12 @@
                     Atributo step
                     Atributo min, max
                 Type email
+                Type search
                 Type week
                 Type hidden
                 Type file
                     Atributo accept (para tipo ou extensão específica) 
+                
                     
 
             Select
@@ -317,9 +319,42 @@
             Tag img
                 Utilizada como o padrão para quando as regras que estiverem no atibuto media da tag source não forem estabelecidos.
 
-            <footer>
+            HTML Semântico
+            Tags especiais utiizadas para dar poder a tópicos da página dentro dos SEOs e leitores para deficientes.
 
-            </footer>
+            Header (Cabeçalho) 
+            Footer (Rodapé da página)
+            Nav (Navigation - mostra onde se encontra o menu)
+            Section (Separa o conteúdo das páginas em assuntos)
+            Article (Conteúdo principal do site)
+            Aside (Conteúdo secundário, lateral)
+            Time (Indica tempo)
+                Atributo datetime (possui a data específica)
+
+            Atributo data
+                Pode ser estendido com qualquer nome. Ex.: data-name, data-lastname. 
+                Serve para armazenar algum dado no HTML para ser usado dinamicamente com JS
+
+            
+            <footer>
+                <p class='en'>Developed by </p>
+                <p class='pt'>Desenvolvido por </p>
+                <a id='modal-link' href="">Eduardo Perottoni</a>
+            </footer> 
+
+            <div id='modal' class='closed'>
+                <div id="modal-social" >
+                    <p id='modal-social-exit' onclick='closeModal()'>x</p>
+                    <div id="modal-social-header">
+                        <img src="./img/profile-picture.jpeg" alt="Foto de perfil - Eduardo Perottoni">
+                        <h3>Eduardo Perottoni</h3>
+                        
+                    </div>
+                    <div id="modal-social-ntw">
+
+                    </div>
+                </div>
+            </div>
 
     </div>
 

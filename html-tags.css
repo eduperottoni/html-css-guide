@@ -9,7 +9,6 @@
 
 body, html{
     width:100%;
-    background-color: aquamarine
 }
 
 main{
@@ -127,10 +126,15 @@ nav#menu-opt{
     z-index:999;
 
     border-radius:0 20px 20px 0;
-    background-color: azure;
+    background-color: #5c5c5c;
 
     transform: translateX(-100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 nav#menu-opt.opened{
     animation:openMenu 0.5s forwards;
@@ -160,4 +164,85 @@ nav#menu-opt.closed{
 
 nav ul{
 
+}
+
+div#modal{
+    background-color:rgba(0, 0, 0, 0.897);
+    position: fixed;
+    top:0;
+    height: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    align-items: center;
+    display: none;
+    justify-content: center;
+}
+
+div#modal .opened{
+    animation: openModal 5s forwards;
+}
+
+div#modal .closed{
+    animation: closeModal 5s forwards;
+}
+
+div#modal-social{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(226, 226, 224);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+div#modal div#modal-social div#modal-social-header{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+div#modal div#modal-social div#modal-social-header img{
+    width: 30%;
+    border-radius:50%;
+}
+
+@keyframes openModal {
+    0%{
+        transform: translateY(-200%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes closeModal {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-200%);
+    }
+}
+
+footer {
+    background-color: #dddddd;
+    display: flex;
+    justify-content: center;
+    padding: 10px
+}
+
+footer  p{
+    display:inline;
+}
+
+footer a{
+    margin-left: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: #d10a0a;
 }
