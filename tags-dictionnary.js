@@ -57,7 +57,7 @@ const menuBtn = document.querySelector ('img#menu-btn')
 const menuOpt = document.getElementById ('menu-opt')
 
 function menuListener(){
-    var opened = menuOpt.classList ==  'opened' ? true : false; 
+    var opened = menuOpt.classList ==  'opened' ? true : false
     return opened
 }
 
@@ -66,4 +66,27 @@ function openCloseMenu() {
     (menuOpt.classList = 'closed'):
     (menuOpt.classList = 'opened');
 }
+
+//AÇÕES NO MODAL DE CONTATO
+const modalBtn = document.getElementById('modal-link')
+const modalContainer = document.querySelector('div#modal')
+const modalCloseBtn = document.querySelector('#modal-social-exit')
+
+modalContainer.addEventListener('click',  evt =>{
+    if (evt.path.indexOf(modalCloseBtn)  == -1){
+        closeModal()
+    }
+})
+
+function closeModal(){
+    modalContainer.classList = 'closed'
+    modalContainer.style.display = 'none'
+} 
+
+modalBtn.addEventListener('click', (e)=>{
+    e.preventDefault()
+    modalContainer.classList = 'opened'
+    modalContainer.style.display = 'flex'
+    console.log('teste')
+})
 
