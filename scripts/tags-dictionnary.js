@@ -70,6 +70,7 @@ function openCloseMenu() {
 //AÇÕES NO MODAL DE CONTATO
 const modalBtn = document.getElementById('modal-link')
 const modalContainer = document.querySelector('div#modal')
+const modalBox = document.querySelector('div#modal-social')
 const modalCloseBtn = document.querySelector('div#modal-social-exit')
 
 modalContainer.addEventListener('click',  evt =>{
@@ -79,14 +80,14 @@ modalContainer.addEventListener('click',  evt =>{
 })
 
 function closeModal(){
-    modalContainer.classList = 'closed'
-    modalContainer.style.display = 'none'
+    modalContainer.classList.remove('show')
+    modalBox.classList.remove('show')
+
 } 
 
 modalBtn.addEventListener('click', (e)=>{
     e.preventDefault()
-    modalContainer.classList = 'opened'
-    modalContainer.style.display = 'flex'
-    console.log('teste')
+    modalContainer.classList.add('show')
+    modalBox.classList.add('show')
 })
 

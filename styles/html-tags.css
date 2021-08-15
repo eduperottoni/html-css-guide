@@ -178,15 +178,12 @@ div#modal{
     justify-content: center;
 }
 
-div#modal .opened{
-    animation: openModal 5s forwards;
+div#modal.show{
+    display: flex;
 }
 
-div#modal .closed{
-    animation: closeModal 5s forwards;
-}
-
-div#modal-social{
+div#modal-social.show{
+    animation: openModal 0.6s forwards;
     width: 50%;
     height: 50%;
     background-color: rgb(226, 226, 224);
@@ -194,6 +191,18 @@ div#modal-social{
     justify-content: center;
     align-items:center;
     position: relative;
+    border-radius:2em;
+}
+
+@keyframes openModal {
+    0%{
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0);
+    }
 }
 
 div#modal div#modal-social div#modal-social-exit{
@@ -201,8 +210,8 @@ div#modal div#modal-social div#modal-social-exit{
     height: 60px;
     padding: 10px;
     position: absolute;
-    top: -30px;
-    left: -30px;
+    top: -20px;
+    left: -20px;
     background-color: red;
     border-radius:50%;
     cursor: pointer;
@@ -235,24 +244,6 @@ div#modal div#modal-social div#modal-social-header{
 div#modal div#modal-social div#modal-social-header img{
     width: 30%;
     border-radius:50%;
-}
-
-@keyframes openModal {
-    0%{
-        transform: translateY(-200%);
-    }
-    100%{
-        transform: translateY(0);
-    }
-}
-
-@keyframes closeModal {
-    0%{
-        transform: translateY(0);
-    }
-    100%{
-        transform: translateY(-200%);
-    }
 }
 
 footer {
