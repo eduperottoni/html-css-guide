@@ -53,7 +53,8 @@ lanButton.addEventListener('click', (e) =>{
 })
 
 //AÇÕES DO MENU HAMBURGUER
-const menuBtn = document.querySelector ('img#menu-btn')
+const menuBtnImg = document.getElementById('menu-btn-img')
+const menuBtn = document.querySelector('div#menu-btn')
 const menuOpt = document.getElementById ('menu-opt')
 
 function menuListener(){
@@ -63,8 +64,8 @@ function menuListener(){
 
 function openCloseMenu() {
     menuListener() ?
-    (menuOpt.classList = 'closed'):
-    (menuOpt.classList = 'opened');
+    (menuOpt.classList = 'closed', menuBtnImg.src='./img/menu-btn.png'):
+    (menuOpt.classList = 'opened', menuBtnImg.src='./img/left-arrow.png')
 }
 
 //AÇÕES NO MODAL DE CONTATO
