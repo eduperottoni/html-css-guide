@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tags Dictionary | HTML</title>
     <link rel="shortcut icon" href="./img/dictionary.png" type="image/x-icon">
-    <link rel="stylesheet" href="./html-tags.css">
+    <link rel="stylesheet" href="./styles/html-tags.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
@@ -15,17 +17,30 @@
 </head>
 <body>
     <div id='container'>
-            <img id='menu-btn' src="./img/menu-btn.png" alt="Menu" srcset="" onclick="openCloseMenu()">
+            <div id="menu-btn" onclick="openCloseMenu()">
+                <img id='menu-btn-img' src="./img/menu-btn.png" alt="Menu" srcset="" >
+            </div>
             <nav id='menu-opt'class='closed'>
-                <img src="./img/close-menu-btn.png" alt="Fechar Menu" onclick="openCloseMenu()">
                 <ul>
                     <li><a href='#estrutura'>Estrutura de HTML</a></li>
+                    <li><a href='#'>Estrutura de HTML</a></li>
+                    <li><a href='#'>Estrutura de HTML</a></li>
+                    <li><a href='#'>Estrutura de HTML</a></li>
+                    <li><a href='#'>Estrutura de HTML</a></li>
+                    <li><a href='#'>Estrutura de HTML</a></li>
+                    <li><a href='#'>Estrutura de HTML</a></li>
+                    <li><a href='#'>Estrutura de HTML</a></li>
+                    <li><a href='#'>Estrutura de HTML</a></li>
+                    <li><a href='#'>Estrutura de HTML</a></li>
+                    <li><a href='#'>Estrutura de HTML</a></li>
+                    <li><a href='#'>Estrutura de HTML</a></li>
                     <li><a href='#'>Estrutura de HTML</a></li>
                 </ul>
             </nav>
             <header>
+                <img id='background' src="./img/html-background.jpg" alt="Código HTML">
                 <div id="title">
-                    <img src="./img/html-logo2.png" alt="Logo HTML">
+                    <img src="./img/html-logo.png" alt="Logo HTML">
                     <h1 class='en'>Tags Dictionary</h1>
                     <h1 class='pt'>Dicionário de Tags</h1>
                 </div>
@@ -223,6 +238,11 @@
                 Atributo name (identifica o campo e é a chave para o valor)
                 Atributo value (pré-determina o valor do campo)
                 Atributo id (diferencia os campos de radio ou de options no select, por exemplo)
+                Atributo placeholder
+                Atributo autofocus
+                Atributo size (configura o tamanho do box de acordo com o número de caracteres setados)
+                Atributo maxlength
+                Atributo autocomplete (autocomplete='off' ou autocomplete='on')
             Variações de input type text que vieram com o HTML5
                 Type color
                 Type date
@@ -329,7 +349,24 @@
             Atributo data
                 Pode ser estendido com qualquer nome. Ex.: data-name, data-lastname. 
                 Serve para armazenar algum dado no HTML para ser usado dinamicamente com JS
+            Tag video
+                Atributos width e heigth
+                Atributo controls
+                Atributo autoplay
+                Tag source
+                    Atributos src (caminho) e type (formato do vídeo)
 
+            Tag audio
+                Atributo source
+                Atributo controls
+                Atributo autoplay
+                Atributo loop
+                Atributo muted
+                Atributo preload
+                Tag source
+                    Atributos src (caminho) e type (formato do audio)
+                
+                
             
             <footer>
                 <p class='en'>Developed by </p>
