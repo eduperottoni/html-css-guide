@@ -114,7 +114,22 @@
     Pode ter os valores de normal ou break-word
 
     Flexbox CSS
-    
+    Tipo de display que torna o box em que for acionado, flexível.
+    Propriedades do CSS:
+        display: flex;
+        flex-direction (por padrão é row, pode ser column, row-reverse, column-reverse)
+        flex-wrap: nowrap, wrap
+        flex-flow: é o flex-wrap + flex-direction (primeiro se especifica a direção e depois o wrap)
+        justify-content: center, flex-start (inicia do início do flex) , flex-end (alinha para o lado do final do flex), space-around, space-between (diz respoeito à flex-direction setada)
+        align-items: alinha para o lado não setado como direção (os valores possíveis são os mesmos que o justify-content)
+        align-content: alinha todo o conteúdo da tag pai, quasndo há wrap
+
+        Propriedades na tag filha
+            align-self:
+            flex: proporção de tamanho para cada item (configurado dentro do item interno)
+            order: altera a posição do item. A ordem padrão é zero.
+
+
 
 
 </body>
