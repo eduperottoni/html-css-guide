@@ -129,6 +129,43 @@
             flex: proporção de tamanho para cada item (configurado dentro do item interno)
             order: altera a posição do item. A ordem padrão é zero.
 
+    Seletor pelo atributo:
+        O atributo deve aparecer entre colchetes
+    input[required]
+    input[type=text]
+    input[type=password]
+    input[name='user']
+    O valor do name deve estar entre aspas, pois é um valor que foge do padrão do sistema, é aleatório, setado pelo programador.
+
+    Pode-se selecionar também partes de determinado valor de certo atributo. Para isso, usa-se o sinal * antes da igualdade do atributo.
+    a[href*='economia']
+    Para atributos que comecem com determinado valor, utiliza-se o ^
+    a[href^='https']
+    Para valores que finalizem com determinada string, usa-se o $:
+    a[href$='html']
+
+    Seletor de elemento vazio (:empty)
+    div:empty
+
+    Seletor de primeira letra e primeira linha. Usamos os dois dois pontos, por se tratar do conteúdo do elemento, não de um atributo e nem do próprio elemento
+    p::first-letter{} (para a primeira letra)
+    p::first-line{}
+
+    Seletor de primeiro ou último elemento. Dessa vez utilizamos apenas um dois pontos, pois se trata de elementos em si.
+    div:firts-child{}
+    div:last-child{}
+
+    Seletor negativo: seleciona os elementos que não possuem as características especificadas
+    :not(seletor dos itens a não estilizar){}
+
+    Seletor NTH. Item específico dentre vários itens alinhados.
+    div:nth-child(4){}
+    div:nth-last-child(2){}
+
+    Seletor ::before/::after. Usados para criar umpseudoconteúdo em formato de elemento anter ou dempois do conteúdo atual do elemento. Geralmente são acompanhados pela propriedade content.
+    div::before{
+        content:"...";
+    }
 
 
 
