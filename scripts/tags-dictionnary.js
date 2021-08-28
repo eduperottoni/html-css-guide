@@ -91,4 +91,3 @@ modalBtn.addEventListener('click', (e)=>{
     modalContainer.classList.add('show')
     modalBox.classList.add('show')
 })
-

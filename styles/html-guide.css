@@ -35,7 +35,7 @@ header img#background{
 }
 
 header #title{
-    padding-top:180px;
+    margin-top:195px;
     display:flex;
     flex-direction:column;
     z-index: 99;
@@ -45,7 +45,13 @@ header #title h1{
     margin: 10px 0 auto 0;
 }
 
-header #title img{
+header #title-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#title-img img{
     width: 50px;
     margin: 0 auto;
 }
