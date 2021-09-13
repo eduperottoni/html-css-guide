@@ -240,5 +240,57 @@
         <a href="">Selo de qualidade</a>
     </div>
 
+    CSS GRID
+    Conceito de Container e Item. 
+        Algumas propriedades serão definidas no item e outras no container
+    Gaps
+        Espaços entre os itens
+        propriedades css --> column-gap, row-gap ou o shortcut gap (coluna, linha)
+
+    Definição de linhas e colunas 
+        grid-template-columns : 100px 120px 100px
+        grid-template-columns : repeat(3, 100px)
+        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(4, auto)
+
+        grid-auto-rows: 100px
+        grid-auto-columns
+    
+    Unidade fr (fração do espaço total de linha ou coluna)
+        Medida relativa ao tamanho total disponível nosentido indicado do grid
+    
+    repeat
+        função com dois valores (quantidade de vezes a repetir, valor a repetir para cada caso)
+        auto-fill
+        repeat(auto-fill, 200px)
+    
+    minmax
+        função que determina o mínimo e máximo para os tamanhos de linha e coluna
+        grid-auto-rows: minmax(100px, auto)
+
+    Posicionamento no grid
+        justify-content (mesmas opções de valor que o flexbox)
+        align-items
+        align-content
+
+    Mesclando itens em linhas e colunas
+        grid-column-start:
+        grid-column-end:
+        grid-row-start;
+        grid-row-end;
+        Quando o row é definido, obrigatoriamente deve-se definir o column deste item
+
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+            <div class="item item4">4</div>
+            <div class="item item5">5</div>
+            <div class="item item6">6</div>
+            <div class="item item7">7</div>
+            <div class="item item8">8</div>
+            <div class="item item9">9</div>
+        </div>
+
 </body>
 </html>
