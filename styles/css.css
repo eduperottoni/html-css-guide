@@ -56,10 +56,14 @@ a.botao:hover{
 .container{
     width:95%;
     display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-template-rows: 1fr;
     gap: 10px 15px;
     overflow-x: auto;
+
+    grid-template-areas:
+        "item5 item5 item2"
+        "item3 item1 item2"
+        "item4 item1 ."
+    ;
 }
 
 
@@ -71,13 +75,61 @@ a.botao:hover{
 }
 
 .item1{
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
 }
 
-.item4{
-    grid-column-start:2;
-    grid-column-end:3;
-    grid-row-start:2;
-    grid-row-end:4;
+.container2{
+    width:95%;
+    margin-top:20px;
+    display:grid;
+    gap:10px;
+    grid-template-areas:
+    "header header header header"
+    "menu content content content"
+    "ads content content content"
+    "rodape rodape rodape rodape"
+    ;
+}
+
+.container2 .item{
+    background-color:#3a7ace;
+}
+
+.container2 header{
+    grid-area: header;
+}
+.container2 nav{
+    grid-area: menu;
+}
+.container2 section{
+    grid-area: content;
+}
+.container2 aside{
+    grid-area: ads;
+}
+.container2 footer{
+    grid-area: rodape;
+}
+
+@media (max-width:900px){
+    .container2{
+        grid-template-areas:
+        "header header header menu"
+        "content content content content"
+        "ads ads ads ads"
+        "rodape rodape rodape rodape"
+        ;
+    }
 }
